@@ -1,0 +1,28 @@
+CREATE TABLE <table name>
+DROP TABLE <table name>
+
+We describe the columns at the time of creating the table
+Note the data types specified
+
+NOT NULL enforces we populate the column otherwise a warning will be shown
+DEFAULT specifies a value if we leave the attribute blank while inserting data
+
+CREATE TABLE new_table(
+      id INT NOT NULL AUTO INCREMENT,
+      name VARCHAR(50) NOT NULL,
+      age INT NOT NULL DEFAULT 100
+);
+
+Two ways of specifying a primary key:
+1.
+  CREATE TABLE new_table(
+        id INT NOT NULL,
+        name VARCHAR(50),
+        PRIMARY KEY (id)
+  );
+
+2.
+  CREATE TABLE new_table(
+        id INT NOT NULL PRIMARY KEY,
+        name VARCHAR(50)
+  );

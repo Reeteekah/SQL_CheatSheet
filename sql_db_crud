@@ -1,0 +1,9 @@
+CREATE DATABASE <db name>
+DROP DATABASE <db name>
+
+e.g.
+CREATE DATABASE demo;
+
+/// add tables, drop tables, etc.
+
+DROP DATABASE demo;
